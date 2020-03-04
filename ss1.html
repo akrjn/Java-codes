@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+<p align="center"><b><u>Calculator</u></b></p>
+	<script>
+		
+		function valid()
+		{
+		var numb1,numb2;
+		numb1=document.form.numbr1.value;
+		numb2=document.form.numbr2.value;
+		if(numb1==""||numb2=="")
+		{
+		window.alert("Invalid inputs");
+		}
+		var answ=+numb1 + +numb2;
+		window.alert(" Answer is  "+answ);
+		}
+		function valid1()
+		{
+		var numb3,numb4;
+		numb3=document.form.numbr1.value;
+		numb4=document.form.numbr2.value;
+		if(numb3==""||numb4=="")
+		{
+		window.alert("Invalid inputs");
+		}
+		answ=+numb3 - +numb4;
+		window.alert(" Answer is  "+answ);
+		}
+		function valid2()
+		{
+		var numb3,numb4;
+		numb3=document.form.numbr1.value;
+		numb4=document.form.numbr2.value;
+		if(numb3==""||numb4=="")
+		{
+		window.alert("Invalid inputs");
+		}
+		var pro=+numb3 * +numb4;
+		window.alert(" Answer is  "+pro);
+		}
+		function valid3()
+		{
+		var numb3,numb4;
+		numb3=document.form.numbr1.value;
+		numb4=document.form.numbr2.value;
+		if(numb3==""||numb4=="")
+		{
+		window.alert("Invalid inputs");
+		}
+		answ=+numb3 / +numb4;
+		window.alert(" Answer is  "+answ);
+		}
+	
+	</script>
+
+	<style>
+	body{
+	font-family:Tahoma;
+	font
+	}
+	#add{
+	background-color:tomato;
+	padding:8px 10px;
+	min-width:10px;
+	border:none;}
+	#sub{
+	background-color:yellow;
+	padding:8px 10px;
+	border:none;}	
+	#pro{
+	background-color:lime;
+	padding:8px 10px;
+	border:none;}
+	#div{
+	background-color:skyblue;
+	padding:8px 10px;
+	border:none;}
+	
+</style>
+</head>
+<body>
+	<center><form name="form">
+	<div class="tab">
+		First number
+		<input type="number" name="numbr1" placeholder="num1" id="n1"><br>
+		Second number
+		<input type="number" name="numbr2" placeholder="num2" id="n2">
+		<br><br>
+		<input type="Submit" value="Add"  id="add" onclick=valid()>
+		<input type="Submit" value="Subtract" id="sub" onclick=valid1()>
+		<input type="Submit" value="Multiply" id="pro" onclick=valid2()>
+		<input type="Submit" value="Divide" id="div" onclick=valid3()>
+		
+	</center></form></div>
+
+</body>
+</html>
